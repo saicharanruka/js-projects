@@ -1,0 +1,16 @@
+<%- include('partials/header.ejs') %>
+
+<h1>Hello, World!</h1>
+
+<ul>
+    <% for(var i =0; i<titles.length; i++) { %>
+        <li><a href="/blog?id=<%= i %>" %>"><%= titles[i] %></a></li>
+    <% } %>
+</ul>
+
+<script>
+
+</script>
+
+
+<%- include('partials/footer.ejs') %>
