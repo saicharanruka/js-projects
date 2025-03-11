@@ -1,1 +1,4 @@
-@import "tailwindcss";
+.delete-icon:hover {
+    fill: red;
+
+}
