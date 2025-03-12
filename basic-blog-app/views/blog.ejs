@@ -1,10 +1,13 @@
 <%- include('partials/header.ejs') %>
 
-<h1><%= title %></h1>
+<h1><%= blogData.title %></h1>
 
 <p>
-    <%= content %>
+    <%= blogData.content %>
 </p>
+
+<button><a href="/edit?id=<%= id %>">Edit</a></button>
+<button><a href="/delete?id=<%= id %>">Delete</a></button>
 
 
 
