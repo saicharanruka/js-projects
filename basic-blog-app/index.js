@@ -20,8 +20,7 @@ app.get("/", (req,res) => {
 app.get("/blog", (req,res) => {
     const blog_id = req.query.id
     res.render("blog.ejs", {
-        blogData : blogData[blog_id],
-        id : blog_id
+        blogData : blogData[blog_id]
     })
 })
 
@@ -35,6 +34,9 @@ app.get("/edit", (req,res)=> {
     })
     blog_to_be_updated = req.query.id
 })
+
+
+
 
 
 app.post("/create", (req,res) => {
